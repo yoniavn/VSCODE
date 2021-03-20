@@ -16,7 +16,28 @@
 #include <array>
 #include <functional>
 
+using namespace std;
+
+//template function
+template <typename T>
+T sum(const T &num)
+{
+    return num;
+}
+
+template <typename T, typename... ARGS>
+T sum(const T &num, const ARGS &...numbers)
+{
+    return num + sum(numbers...);
+}
+
 int main()
 {
+    std::cout << sum(2, 5, 10) << endl;                           //17
+    std::cout << sum(2, 5, 10, 2, 5, 102, 5, 102, 5, 10) << endl; //248
+    std::cout << sum(3) << endl;
+
+    std::cout << sum(3.3, 5.5) << endl; //8.8
+
     return 0;
 }
