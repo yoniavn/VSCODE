@@ -76,9 +76,9 @@ vector<int> twoSum2(vector<int> &nums, int target)
 int main()
 {
     vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    //twoSum(nums, 9);
+    twoSum(nums, 9);
     //twoSum(nums, 19);
 
-    twoSum2(nums, 11);
+    //twoSum2(nums, 11);
     return 0;
 }
