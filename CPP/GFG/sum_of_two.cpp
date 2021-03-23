@@ -65,7 +65,7 @@ vector<int> twoSum2(vector<int> &nums, int target)
         else
         {
             res.push_back(front);
-            res.push_back(back);
+            res.push_back(back);gi
             std::cout << "found two numbers: " << nums[front] << " + " << nums[back] << " = " << target << std::endl;
             return res;
         }
