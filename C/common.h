@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
 #include <time.h>
 
 // useful macros
+
+#define BYTE unsigned char
 
 //extract length from array
 #define ARR_LENGTH(arr) ((sizeof(arr)) / (sizeof(*arr)))
